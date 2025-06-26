@@ -110,7 +110,7 @@ def search_db_form(fields):
 def print_fields(fields: list):
     '''Печать полей формы с типами из входных аргументов'''
     print('{')
-    print(*[f'  {x}' for x in fields], sep='\n')
+    print(*sorted([f'  {x}' for x in fields]), sep=',\n')
     print('}')
 
 
